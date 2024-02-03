@@ -2,6 +2,7 @@
   "name": "desafio3conversyanez",
   "version": "1.0.0",
   "description": "Desafío No. 3 del curso Back End de CoderHouse.",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

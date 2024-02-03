@@ -1,4 +1,4 @@
-import crypto from 'crypto'
+
 import {promises as fs} from 'fs'
 
 export class ProductManager {
@@ -26,7 +26,7 @@ export class ProductManager {
 
     async getProducts(){
         const products = JSON.parse(await fs.readFile(this.path, 'utf-8'))
-        console.log(products)
+        return products
     }
 
     async getProductsById(id){
@@ -36,8 +36,7 @@ export class ProductManager {
             return product
         }else{
             return 'El producto no existe'
-        }
-        
+        } 
     }
 
     async updateProduct(id, nuevoProducto){
